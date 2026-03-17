@@ -1,51 +1,64 @@
 # AI Email Spam Detection System
 
-Developed by: Kartik Mathpati
-This project implements an AI-based email spam detection system that classifies
-incoming email messages as Spam or Ham (legitimate emails). The system uses
-Natural Language Processing (NLP) techniques and machine learning algorithms
-to analyze email content and predict whether an email is spam.
+**Developed by:** Kartik Mathpati
 
-The application provides an interactive web interface built with Streamlit
-where users can test individual emails or process multiple emails from an MBOX archive.
+This project implements an AI-based email spam detection system that classifies incoming email messages as **Spam** or **Ham (legitimate emails)**. The system uses **Natural Language Processing (NLP)** and **Machine Learning algorithms** to analyze email content and predict whether an email is spam.
+
+The application provides an interactive web interface built using **Streamlit**, allowing users to test individual emails or process multiple emails from an **MBOX archive**.
+
+---
 
 ## 📷 Application Screenshots
 
 ### Spam Detection Interface
-![Spam Detection](screenshot1.png)
+![Spam Detection Interface](screenshot1.png)
 
 ### Email Prediction Example
-![Prediction Example](screenshot2.png)
+![Email Prediction Example](screenshot2.png)
+
+---
+
 ## 🚀 Key Features
 
-- **Advanced ML Pipeline**: Modular design separating data ingestion, transformation, and model training.
-- **Multiple Model Support**: evaluation of various algorithms including SVM, Logistic Regression, Decision Trees, and Random Forest.
-- **Interactive Web UI**: Built with Streamlit for real-time single-email analysis and batch processing.
-- **MBOX Support**: Native capability to process and classify entire `mbox` email archives.
-- **Detailed Analytics**: Comprehensive logging and performance metrics (Precision, Recall, F1-Score).
+- **Advanced ML Pipeline** – Modular design separating data ingestion, transformation, and model training.
+- **Multiple Model Support** – Evaluation of algorithms including **SVM, Logistic Regression, Decision Trees, and Random Forest**.
+- **Interactive Web UI** – Built using **Streamlit** for real-time email classification.
+- **MBOX File Support** – Process and classify multiple emails from an email archive.
+- **Performance Analytics** – Logs metrics such as **Precision, Recall, Accuracy, and F1-Score**.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Language**: Python 3.10+
-- **Frontend**: Streamlit
-- **ML Framework**: Scikit-learn
-- **Data Processing**: Pandas, NumPy, BeautifulSoup4
-- **Project Management**: `uv` (recommended) or `pip`
+| Category | Technology |
+|--------|-------------|
+| Programming Language | Python 3.10+ |
+| Frontend | Streamlit |
+| Machine Learning | Scikit-learn |
+| Data Processing | Pandas, NumPy |
+| Text Processing | BeautifulSoup4 |
+| Package Management | pip / uv |
+
+---
 
 ## 📂 Project Structure
 
 ```
+AI-Email-Spam-Detection
+│
 ├── app.py                  # Main Streamlit Web Application
 ├── requirements.txt        # Project dependencies
-├── main.py                 # (Optional) Alternative entry point
+├── main.py                 # Alternative entry point
+│
 ├── src/
-│   ├── components/         # Core processing modules (Ingestion, Transformation)
-│   ├── pipeline/           # Orchestration pipelines (Training, Prediction)
-│   ├── config/             # Configuration and parameters
-│   └── utils/              # Helper functions, logging, and state management
-├── data/                   # Dataset storage (inputs)
-├── outputs/                # Training artifacts (models, vectorizers)
-└── logs/                   # System runtime logs
+│   ├── components/         # Data ingestion & transformation
+│   ├── pipeline/           # Training and prediction pipelines
+│   ├── config/             # Configuration files
+│   └── utils/              # Helper functions and logging
+│
+├── data/                   # Dataset storage
+├── outputs/                # Trained models & vectorizers
+└── logs/                   # System logs
 ```
 
 ## ⚡ Installation
