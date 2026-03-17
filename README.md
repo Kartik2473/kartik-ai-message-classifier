@@ -8,6 +8,14 @@ to analyze email content and predict whether an email is spam.
 
 The application provides an interactive web interface built with Streamlit
 where users can test individual emails or process multiple emails from an MBOX archive.
+
+## 📷 Application Screenshots
+
+### Spam Detection Interface
+![Spam Detection](screenshot1.png)
+
+### Email Prediction Example
+![Prediction Example](screenshot2.png)
 ## 🚀 Key Features
 
 - **Advanced ML Pipeline**: Modular design separating data ingestion, transformation, and model training.
